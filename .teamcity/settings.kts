@@ -34,6 +34,8 @@ project {
 object BuildAndTest : BuildType({
     name = "Build and Test"
 
+    artifactRules = "build/libs"
+
     vcs {
         root(DslContext.settingsRoot)
 
