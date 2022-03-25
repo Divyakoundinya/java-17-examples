@@ -45,6 +45,7 @@ object BuildAndTest : BuildType({
     steps {
         gradle {
             tasks = "clean build"
+            useGradleWrapper = false
         }
     }
 
